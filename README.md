@@ -50,19 +50,27 @@ Un support de présentation pour la soutenance, présentant :
 
 ## La mise en place de l'environnement Big Data pour ce projet implique plusieurs étapes :
 
-Choix du fournisseur de cloud: Dans ce cas, AWS a été choisi comme fournisseur de cloud.
+Choix du fournisseur de cloud: Dans notre cas, AWS a été choisi comme fournisseur de cloud.
 
-Création d'un bucket S3: Le stockage des données est l'un des éléments les plus importants dans un environnement Big Data. Dans ce projet, Amazon S3 (Simple Storage Service) est utilisé pour stocker les images. Ainsi, il faut créer un bucket S3 pour stocker ces images.
+Création d'un bucket S3: Le stockage des données est l'un des éléments les plus importants dans un environnement Big Data. Dans ce projet, Amazon S3 (Simple Storage Service) est utilisé pour stocker les images.Création du bucket S3 p8-ms pour stocker ces images.
 
-Création d'un cluster EMR: Amazon EMR (Elastic MapReduce) est utilisé pour exécuter le code Python sur un cluster de nœuds de calcul. La création d'un cluster EMR nécessite la sélection de la version d'EMR, la sélection du type d'instance, la configuration des règles de sécurité et la définition des autres paramètres de cluster tels que le nombre de nœuds.
+Création d'un cluster EMR: Amazon EMR (Elastic MapReduce) est utilisé pour exécuter le code Pyspark sur un cluster de nœuds de calcul. La création d'un cluster EMR nécessite la sélection de la version d'EMR, la sélection du type d'instance, la configuration des règles de sécurité et la définition des autres paramètres de cluster tels que le nombre de nœuds.
 
-Configuration du cluster EMR: Une fois le cluster EMR créé, il doit être configuré pour exécuter le code Python. Cela peut être fait en utilisant un script bootstrap qui installe les dépendances requises sur les nœuds du cluster.
+Configuration du cluster EMR: Une fois le cluster EMR créé, il doit être configuré pour exécuter le code PySpark. Cela est fait en utilisant un script bootstrap qui installe les dépendances requises sur les nœuds du cluster.
 
-Transfert des données sur le bucket S3: Une fois que le cluster EMR est configuré, les données doivent être transférées sur le bucket S3. Cela peut être fait en utilisant la commande AWS CLI ou en utilisant l'interface utilisateur graphique d'Amazon S3.
+Transfert des données sur le bucket S3: Une fois que le cluster EMR est configuré, les données doivent être transférées sur le bucket S3(images/bootstrap). Cela peut être fait en utilisant la commande AWS CLI ou en utilisant l'interface utilisateur graphique d'Amazon S3.
 
-Exécution du code Python sur le cluster EMR: Après avoir transféré les données sur le bucket S3, le code Python peut être exécuté sur le cluster EMR en utilisant l'interface de ligne de commande d'EMR ou en utilisant l'interface utilisateur graphique.
+L'environnement Big Data est prêt à être utilisé pour le traitement des images :
 
-Une fois toutes ces étapes terminées, l'environnement Big Data est prêt à être utilisé pour le traitement des images.
+Exécution du code PySpark : Après avoir transféré les données sur le bucket S3, le script PySpark peut être exécuté sur le cluster EMR en utilisant JupiterHub (telechargement du script PySpark avec l'upload JupitherHub ou avec aws cli).
+
+En résumé, nous avons déployé sur le cloud une
+solution qui permet avec notre script PySpark
+d’extraire les caractéristiques de chaque image
+avec un algorithme de transfert learning ,
+d’effectuer une réduction de dimension (ACP)
+sur ces caractéristiques et leur sauvegarde pour
+une utilisation ultérieure.
 
 
 
