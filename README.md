@@ -71,11 +71,3 @@ avec un algorithme de transfert learning ,
 d’effectuer une réduction de dimension (ACP)
 sur ces caractéristiques et leur sauvegarde pour
 une utilisation ultérieure.
-
-
-
-
-
-
-
-
