@@ -71,3 +71,39 @@ avec un algorithme de transfert learning ,
 d’effectuer une réduction de dimension (ACP)
 sur ces caractéristiques et leur sauvegarde pour
 une utilisation ultérieure.
+
+### Référentiel d'évaluation
+
+Identifier les outils du cloud permettant de mettre en place un environnement Big Data
+
+CE1 Vous avez identifié les différentes briques d'architecture nécessaires pour la mise en place d'un environnement Big Data.
+
+CE2Vous avez identifié les outils du cloud permettant de mettre en place l'environnement Big Data conforme aux normes RGPD en vigueur. 
+
+Utiliser les outils du cloud pour manipuler de la donnée dans un environnement Big Data
+
+CE1 Vous avez chargé les fichiers de départ et ceux après transformation dans un espace de stockage cloud conforme à la réglementation RGPD.
+
+CE2 Vous avez exécuté les scripts en utilisant des machines dans le cloud.
+
+CE3 Vous avez réalisé un script qui permet d'écrire les sorties du programme directement dans l'espace de stockage cloud.
+
+Paralléliser des opérations de calcul avec Pyspark
+
+CE1 Vous avez identifié les traitements critiques lors d'un passage à l'échelle en termes de volume de données.
+
+CE2 Vous veillez à ce que l’exploitation des données soit conforme au RGPD. Dans le cadre de ce projet : 
+
+les données sont stockées, et les traitements sont réalisés, sur des serveurs situés sur le territoire européen
+
+CE3 Vous avez développé les scripts s’appuyant sur Spark.
+
+CE4 Vous vous êtes assuré que toute la chaîne de traitement est exécutée dans le cloud.
+
+### Compétences évaluées
+
+Utiliser les outils du cloud pour manipuler des données dans un environnement Big Data
+
+Identifier les outils du cloud permettant de mettre en place un environnement Big Data
+
+Paralléliser des opérations de calcul avec Pyspark
